@@ -14,15 +14,17 @@ Node()
     data = 0;
     next = nullptr;
 }
+// remove unnecessary constructor
 
 Node(int x, Node & prev)
 {
     data = x;
     prev.assign_ptr();
 }
-
+ 
 void give_val(int);
 void assign_ptr(Node &);
+// functions not needed
 void print_next();
 void nullify();
 
@@ -54,7 +56,18 @@ class ll
     private : 
     Node head;
     int lengthofll{1};
+    /*
+    the ll constructor calls the node constructor which assigns the pointer to this node to the previous node.
 
+the methods include
+ length of ll
+ remove node
+ change value of node
+ access /search node 
+** reverse the ll
+** make  dll
+ 
+    */
     public :
     ll()
     {
