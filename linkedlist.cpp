@@ -57,6 +57,7 @@ class ll
     Node head;
     int lengthofll{1};
     /*
+NOT Poossible $tard
     the ll constructor calls the node constructor which assigns the pointer to this node to the previous node.
 
 the methods include
