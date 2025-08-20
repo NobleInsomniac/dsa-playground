@@ -1,19 +1,21 @@
 #include <iostream>
 using namespace std;
+
 class Node
 {
-private:
 
+private:
 int data;
 Node *next;
 
-
 public:
+
 Node()
 {
     data = 0;
     next = nullptr;
 }
+
 // remove unnecessary constructor
 
 Node(int x, Node & prev)
@@ -36,21 +38,22 @@ void Node ::  nullify()
     next = nullptr;
 }
 
-
-
 void Node :: print_next()
 {
     cout << next << endl;
 }
+
 void Node :: give_val(int a)
 {
     data = a;
     
 }
+
 void Node :: assign_ptr(Node & N)
 {
     next = &N;
 }
+
 class ll
 {
     private : 
@@ -69,11 +72,14 @@ the methods include
 ** make  dll
  
     */
+
     public :
+
     ll()
     {
         Node head;
     }
+
     //void link_top(int);
     // void link_btm(int);
     //int give_len();
@@ -101,10 +107,6 @@ Node N3(2, N2);
 
 cout << &N3<< endl;
 N2.print_next();
-
-
-
-
 
 
 }
